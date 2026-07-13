@@ -17,19 +17,11 @@ body {
   padding: 5px;
 }
 
-.left-side {
+.left-side, .right-side {
   display: flex;
-  justify-content: flex-start;
   gap: 10px;
-}
-
-.right-side {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 10px;
 }
-
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
