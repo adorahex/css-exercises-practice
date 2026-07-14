@@ -30,16 +30,19 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
+/* flex-shrink: 0 
+ensures that when 
+something in the flexbox 
+resized, it remained 
+unchanged in size */
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  padding: 5px;
-  flex: 1;
-  min-width: 300px;
-  min-height: 200px;
+  width: 300px;
   padding: 10px;
 }
 
@@ -61,12 +64,11 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
   padding: 48px;
   gap: 20px;
 }
 
 .base {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
 }
